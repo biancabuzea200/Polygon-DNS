@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./styles/App.css";
 import twitterLogo from "./assets/twitter-logo.svg";
 import { ethers } from "ethers";
+import contractAbi from "fe/src/utils/contractABI.json";
 
 // Constants
 const TWITTER_HANDLE = "buzea200";
@@ -65,7 +66,7 @@ const App = () => {
       return;
     }
     if (domain.length < 3) {
-      alert("somain must be at least 3 chars long");
+      alert("domain must be at least 3 chars long");
       return;
     }
 
